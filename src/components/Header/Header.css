@@ -1,0 +1,41 @@
+.Title {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: rgb(192, 45, 26);
+  color: #fff;
+}
+
+.Header {
+  background: rgb(0, 0, 77);
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.2);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-index-satellite);
+  color: rgb(255, 255, 255);
+}
+
+.Header__inner {
+  align-items: stretch;
+  color: rgb(255, 255, 255);
+  display: flex;
+  height: 5.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 148rem;
+  padding: 0 2rem;
+}
+
+.Nav {
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,66 @@
+.Footer {
+  height: 150px;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 600px;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.Footer__container {
+  margin: initial;
+  max-width: 1100px;
+  width: 100%;
+  top: 300px;
+}
+
+// --------- New Footer Styles ---------
+
+.Footer__mainContainer {
+  border-top: 1px solid var(--color-greyscale-mid);
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-m);
+  overflow: hidden;
+  padding-top: var(--space-m);
+  width: 0;
+
+  @media (min-width: $tablet-landscape) {
+    width: 100%;
+  }
+
+  &--isShownOnMobile {
+    width: 100% !important;
+  }
+}
+
+.Footer__linksContainer {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.Footer__ItemsContainer {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+.Footer__ItemsText {
+  @extend %textM;
+  line-height: 2em;
+}
+
+.Footer__copyrightInfo {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: var(--font-size-s);
+  justify-content: center;
+  line-height: var(--line-height-xs);
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
